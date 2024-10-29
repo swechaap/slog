@@ -185,4 +185,12 @@ Circuit Diagram :
 ![Screenshot from 2024-09-25 00-55-07](https://github.com/user-attachments/assets/3830c233-4023-4b64-8a4b-05bb95fc1b3f)
 
 
+**LINUX COMMANDS :** 
+mysql -u root -p
+CREATE USER 'slogadmin'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'slogadmin'@'localhost' WITH GRANT OPTION;
+mysql -u slogadmin -p
+CREATE DATABASE slog;
 
+
+mysql -u slogadmin -p slog < slog.sql 
